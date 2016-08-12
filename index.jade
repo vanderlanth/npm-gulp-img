@@ -1,0 +1,27 @@
+mixin head(name)
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name="description" content='content')
+		meta(name="keywords" content='content')
+		link(rel="icon" href='')
+		title=name
+		meta(name='description' content='')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(rel='stylesheet' href='css/main.css')
+
+mixin picture(content)
+	picture(class='test-img')
+		source(srcset='build-img/'+content+'-l@2x.png 2x, build-img/'+content+'-l.png 1x' media="(min-width: 1160px)")
+		source(srcset='build-img/'+content+'-m@2x.png 2x, build-img/'+content+'-m.png 1x' media="(min-width: 1024px)")
+		source(srcset='build-img/'+content+'-s@2x.png 2x, build-img/'+content+'-s.png 1x' media="(min-width: 768px)")
+		source(srcset='build-img/'+content+'-xs@2x.png 2x, build-img/'+content+'-xs.png 1x' media="(min-width: 300px)")
+		img(src='build-img/'+content+'-xs.png' alt='')
+
+
+doctype
+html
+	mixin head('test-img')
+	body
+		each image in images.src
+			mixin picture(image)
