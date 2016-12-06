@@ -4,7 +4,7 @@ Save images for the web for different devices.
 (Make sure [imageMagick](http://www.imagemagick.org/script/binary-releases.php) is installed on your computer)
 
 1. Add your images in "src-img"
-2. In your console, type "npm istall"
+2. In your console, type "npm install"
 3. Then, to generate your images, type "sudo gulp images"
 4. Your images will be generate in four sizes in the file "build-img"
 
