@@ -1,3 +1,7 @@
+Warning: This repository is not maintened anymore, please check [this repository](https://github.com/vanderlanth/image-compressor) if you want to go further.
+
+--------------------
+
 # npm-gulp-img
 Save images for the web for different devices.
 
